@@ -1,0 +1,26 @@
+@keyframes moveAndColorChange {
+  0%,
+  100% {
+    transform: translateY(2px);
+    color: #4f46e5; /* Indigo */
+  }
+  60% {
+    transform: translateY(-2px);
+    color: #ef4444; /* Red */
+  }
+}
+
+.logo {
+  @apply flex items-center justify-center space-x-2;
+}
+
+.letterE,
+.letterJ {
+  @apply text-3xl font-bold font-rouge-script;
+  animation: moveAndColorChange 2s ease-in-out infinite;
+}
+
+.hexagon-border {
+  stroke: red;
+  stroke-width: 2px;
+}

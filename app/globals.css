@@ -3,31 +3,114 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --text-color: #1f2937;
+  --background1-color: #eff1f8;
+  --background2-color: #f1f1ea;
+  --background3-color: #efefee;
+  --accent-color: #00383b;
+  --secondary-color: #cccbc0;
+  --highlight-color: #ec4899;
+  --border-style: 2px dashed #e5e7eb;
+  --shadow-color: #b1bbce;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.dark {
+  --text-color: #e4e4e4;
+  --text-color2: #bdbdbd;
+  --background1-color: rgb(10, 35, 69);
+  --background2-color: #0b2044;
+  --background3-color: #061328;
+
+  /* buttons */
+  --accent-color: #009e91;
+  /* secondary buttons, hover */
+  --secondary-color: #51e4dd39;
+  /* key info, interactive elements */
+  --highlight-color: #f472b6;
+  --border-style: 2px dashed #4b5563;
+  --shadow-color: #08afa1;
+}
+
+.pink {
+  --text-color: #1f2937;
+  --text-color2: #bdbdbd;
+  --background1-color: #ebabe6;
+  --background2-color: #edc4ea;
+  --background3-color: #f0cbed;
+  --accent-color: #c737a5;
+  --secondary-color: #db65a6;
+  --highlight-color: #c53c80;
+  --border-style: 2px dashed #e5e7eb;
+  --shadow-color: #fef3c7;
+}
+
+.hover:hover {
+  text-decoration: underline;
+}
+/* text gradient */
+.text-gradient {
+  background: linear-gradient(90deg, #c03496, #af82dd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* Cube */
+.cube {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: rotate 10s infinite linear;
+}
+
+.face {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: rgba(213, 76, 176, 0.8);
+  border: 3px solid #ccc;
+}
+
+.front {
+  transform: rotateY(0deg) translateZ(50px);
+}
+.back {
+  transform: rotateY(180deg) translateZ(50px);
+}
+.right {
+  transform: rotateY(90deg) translateZ(50px);
+}
+.left {
+  transform: rotateY(-90deg) translateZ(50px);
+}
+.top {
+  transform: rotateX(90deg) translateZ(50px);
+}
+.bottom {
+  transform: rotateX(-90deg) translateZ(50px);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* Slide in Avatar animation */
+
+@keyframes slideIn {
+  from {
+    transform: translateX(+100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.slide-in {
+  animation: slideIn 1s ease-out forwards;
 }
