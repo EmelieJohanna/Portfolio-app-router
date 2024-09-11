@@ -9,7 +9,7 @@ function Card({ title, description, mockup, hrefVercel, hrefGit }) {
       <div className="mt-4 flex space-x-4">
         {hrefVercel && (
           <Button href={hrefVercel} target="_blank" rel="noopener noreferrer">
-            View with Vercel
+            View Project
           </Button>
         )}
         {hrefGit && (
