@@ -37,7 +37,7 @@ export const projects = [
     title: "Apple Quiz",
     description:
       "This is a quiz app made with my crew that lets you add/remove your own questions. Made with Next.js.",
-    hrefVercel: "quiz-redux.emelie.org",
+    hrefVercel: "https://quiz-redux.emelie.org/",
     hrefGit: "https://github.com/EmelieJohanna/quiz-redux.git",
   },
 ];
