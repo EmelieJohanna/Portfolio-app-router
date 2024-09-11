@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/QuizRedux/(.*)",
+      "destination": "https://quiz-redux-gules.vercel.app/$1"
+    }
+  ]
+}
