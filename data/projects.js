@@ -1,18 +1,16 @@
-import Card from "./Card";
-
-const projects = [
+export const projects = [
   {
     id: 1,
     title: "This Portfolio",
     description: "Made with Next.js app router.",
     hrefVercel:
-      "https://react-clock-3eh2s0123-emeliejohannas-projects.vercel.app/",
-    hrefGit:
-      "https://react-clock-3eh2s0123-emeliejohannas-projects.vercel.app/",
+      "https://portfolio-app-router-mwj69dqcu-emeliejohannas-projects.vercel.app",
+    hrefGit: "https://github.com/EmelieJohanna/Portfolio-app-router.git",
   },
   {
     id: 2,
     title: "Todo List Redux",
+    mockup: "mockup-todolist.png",
     description:
       "A project that lets you add/remove and check of finnished tasks. Made with Next.js pages router and redux toolkit.",
     hrefVercel: "https://todolist-redux-five.vercel.app/",
@@ -42,22 +40,3 @@ const projects = [
     hrefGit: "https://github.com/EmelieJohanna/quiz-redux.git",
   },
 ];
-
-export default function Projects() {
-  return (
-    <>
-      <h2 className=" text-center font-bold text-text">Projects</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
-        {projects.map((project) => (
-          <Card
-            key={project.id}
-            title={project.title}
-            description={project.description}
-            hrefVercel={project.hrefVercel}
-            hrefGit={project.hrefGit}
-          />
-        ))}
-      </div>
-    </>
-  );
-}

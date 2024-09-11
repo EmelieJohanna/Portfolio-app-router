@@ -1,7 +1,7 @@
 "use client";
 
 import Hero from "./components/Hero";
-import Projects from "./components/Projects";
+import ProjectsDisplay from "./components/ProjectsDisplay";
 import Head from "next/head";
 import { useTheme } from "@/contexts/ThemeContext";
 import SkillDisplay from "./components/SkillDisplay";
@@ -33,9 +33,9 @@ export default function Home() {
         className={`flex min-h-screen flex-col items-center justify-between p-10`}
       >
         <Hero />
-        <SkillDisplay classname="m-28" />
-        <Projects />
-        <div className="m-30">
+        <SkillDisplay classname="mb-20 md:m-28" />
+        <ProjectsDisplay />
+        <div className="m-20">
           <Cube />
         </div>
         <BackToTopButton />
