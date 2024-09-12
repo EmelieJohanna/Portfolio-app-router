@@ -20,8 +20,7 @@ export const projects = [
     id: 3,
     title: "Worldwide Digital Clocks + Timers Library",
     description: "Made with Vite and React.js.",
-    hrefVercel:
-      "https://react-clock-3eh2s0123-emeliejohannas-projects.vercel.app/",
+    hrefVercel: "https://react-clock.emelie.org/",
     hrefGit:
       "https://react-clock-3eh2s0123-emeliejohannas-projects.vercel.app/",
   },
