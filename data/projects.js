@@ -13,7 +13,7 @@ export const projects = [
     mockup: "mockup-todolist.png",
     description:
       "A project that lets you add/remove and check of finnished tasks. Made with Next.js pages router and redux toolkit.",
-    hrefVercel: "https://todolist-redux-five.vercel.app/",
+    hrefVercel: "https://todolist-redux.emelie.org/",
     hrefGit: "https://github.com/EmelieJohanna/todolist-redux.git",
   },
   {
