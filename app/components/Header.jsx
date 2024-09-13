@@ -32,6 +32,7 @@ export default function Header() {
       top: yCoord,
       behavior: "smooth",
     });
+    toggleNav();
   };
 
   return (
@@ -86,18 +87,31 @@ export default function Header() {
                     fixed inset-y-0 left-0 w-64 transition-transform bg-white p-5
                     flex flex-col space-y-3 sm:hidden z-40`}
       >
-        <Link href="#" className="hover:text-accent" onClick={toggleNav}>
+        <Link
+          href=""
+          className="hover:text-accent"
+          onClick={() => scrollToSection(0)}
+        >
           Home
         </Link>
-        <Link href="#" className="hover:text-accent" onClick={toggleNav}>
-          Projects
-        </Link>
-        <Link href="#" className="hover:text-accent" onClick={toggleNav}>
+        <Link
+          href=""
+          className="hover:text-accent"
+          onClick={() => scrollToSection(600)}
+        >
           Skills
         </Link>
-        <Link href="#" className="hover:text-accent" onClick={toggleNav}>
-          About Me
+        <Link
+          href=""
+          className="hover:text-accent"
+          onClick={() => scrollToSection(1200)}
+        >
+          Projects
         </Link>
+
+        {/* <Link href="" className="hover:text-accent" onClick={toggleNav}>
+          About Me
+        </Link> */}
       </div>
 
       {/* Right Side Buttons */}
