@@ -5,7 +5,7 @@ export default function Projects() {
   return (
     <>
       <h2 className=" text-center font-bold text-text">Projects</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
+      <div className="grid grid-cols-1  gap-8 my-10">
         {projects.map((project) => (
           <Card
             key={project.id}
@@ -14,6 +14,7 @@ export default function Projects() {
             description={project.description}
             hrefVercel={project.hrefVercel}
             hrefGit={project.hrefGit}
+            youtubeLink={project.youtubeLink}
           />
         ))}
       </div>

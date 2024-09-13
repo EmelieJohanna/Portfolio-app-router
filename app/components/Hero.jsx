@@ -5,7 +5,7 @@ import { MdMailOutline } from "react-icons/md";
 
 function Hero() {
   return (
-    <section className="bg-transparent text-text items-center py-12">
+    <section className="bg-transparent text-text items-center py-10">
       <div className="grid md:grid-cols-2 ">
         <div className="flex justify-center place-content-center items-center mb-10 md:mb-0">
           <Avatar className="slide-in" />
@@ -15,7 +15,7 @@ function Hero() {
           <div className="font-xl ">
             <h1 className="font-bold text-4xl block my-4">
               Hi, I'm Emelie
-              <span className="text-gradient block">Fullstack Developer.</span>
+              <span className="text-gradient block">Frontend Developer.</span>
             </h1>
             <div className="flex space-x-4 mb-10">
               <Button
@@ -41,11 +41,16 @@ function Hero() {
               </Button>
             </div>
             <p className="wrap">
-              A Curious Fullstack Dev Student With Too Many Hobbies.
+              A Curious Frontend Dev Student With Too Many Hobbies.
             </p>
             <p className="my-4">
-              This website was built with React. Visit my{" "}
-              <span href="https://github.com/EmelieJohanna">Github </span>
+              This website was built with Next.js. Visit my{" "}
+              <span
+                href="https://github.com/EmelieJohanna"
+                className="underline cursor-pointer"
+              >
+                github
+              </span>{" "}
               page to see the source code and other projects.
             </p>
           </div>

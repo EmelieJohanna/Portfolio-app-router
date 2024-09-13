@@ -3,11 +3,18 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { MdMailOutline } from "react-icons/md";
 import EasterEggBtn from "./EasterEggBtn";
 import Button from "./Button";
+import { GoArrowDownLeft } from "react-icons/go";
 
 export default function Footer() {
   return (
     <footer className="bg-transparent p-10 text-text2">
-      <EasterEggBtn />
+      <div>
+        <h3 className="ml-6 text-highlight ">
+          Click me!
+          <GoArrowDownLeft />
+        </h3>
+        <EasterEggBtn />
+      </div>
       <div className="flex m-4 justify-center space-x-4">
         <Button
           href="mailto:emelie.lundberg42@gmail.com"

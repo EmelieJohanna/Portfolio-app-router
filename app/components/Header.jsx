@@ -27,8 +27,15 @@ export default function Header() {
     return () => document.removeEventListener("click", closeNav);
   }, [isNavOpen]);
 
+  const scrollToSection = (yCoord) => {
+    window.scrollTo({
+      top: yCoord,
+      behavior: "smooth",
+    });
+  };
+
   return (
-    <div className="flex bg-transparent justify-between items-center p-4 text-text">
+    <div className="sticky top-0 bg-background1 flex justify-between items-center p-4 text-text">
       {/* Container for Logo and Hamburger Menu */}
       <div className="flex items-center space-x-4">
         {/* Logo */}
@@ -47,18 +54,30 @@ export default function Header() {
 
       {/* Desktop Navigation */}
       <nav className="hidden sm:flex p-2 space-x-4 items-center">
-        <Link href="#" className="hover:text-accent">
+        <Link
+          href="#"
+          onClick={() => scrollToSection(0)}
+          className="hover:text-accent"
+        >
           Home
         </Link>
-        <Link href="#" className="hover:text-accent">
-          Projects
-        </Link>
-        <Link href="#" className="hover:text-accent">
+        <Link
+          href="#"
+          onClick={() => scrollToSection(500)}
+          className="hover:text-accent"
+        >
           Skills
         </Link>
-        <Link href="#" className="hover:text-accent">
-          About Me
+        <Link
+          href=""
+          onClick={() => scrollToSection(1000)}
+          className="hover:text-accent"
+        >
+          Projects
         </Link>
+        {/* <Link href="#" className="hover:text-accent">
+          About Me
+        </Link> */}
       </nav>
 
       {/* Mobile Navigation Menu */}
