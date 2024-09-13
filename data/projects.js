@@ -1,6 +1,6 @@
 export const projects = [
   {
-    id: 3,
+    id: 1,
     title: "Fairy Tailor",
     description:
       "My teams' contribution to our school's yearly AI coding challenge! A storytelling app for children that used AI to create custom stories. Utilizing Next.js, Express.js and MySQL. ",
@@ -36,6 +36,15 @@ export const projects = [
   },
   {
     id: 5,
+    title: "The Little Cook Book",
+    mockup: "mockup-recipe-app.png",
+    description:
+      "A quick group project built with React as part of a school assignment. The goal was to create a recipe app that integrates data from the Edamam API. The app allows users to search for recipes, rate them, as well as add and delete recipes. Since it was a short project, it's not flawless, but it demonstrates core functionality and API integration.",
+    hrefVercel: "https://recipe-app-lemon-gamma.vercel.app/",
+    hrefGit: "https://github.com/EmelieJohanna/Recipe-app.git",
+  },
+  {
+    id: 6,
     title: "This Portfolio",
     description: "Made with Next.js app router and tailwind.",
     hrefVercel: "https://emelie.org/",

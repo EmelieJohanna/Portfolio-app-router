@@ -2,13 +2,11 @@
 import { useTheme } from "@/contexts/ThemeContext";
 
 export default function ThemeBtn() {
-  const { dispatch, state } = useTheme();
+  const { dispatch } = useTheme();
 
   function togglePinkTheme() {
     dispatch({ type: "TOGGLE_PINK" });
   }
-
-  console.log("EasterEggBtn: state", state);
 
   return (
     <button

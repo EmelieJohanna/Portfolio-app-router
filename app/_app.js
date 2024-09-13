@@ -8,7 +8,6 @@ function MyApp({ children }) {
   const { state } = useTheme();
 
   useEffect(() => {
-    console.log("Theme changed:", state.userPreferences.theme);
     // dark theme läggs på om toggle byts till add
     document.documentElement.classList.toggle(
       "dark",

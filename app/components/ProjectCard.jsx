@@ -11,10 +11,10 @@ function ProjectCard({
   return (
     <div className=" rounded overflow-hidden shadow-md shadow-shadow p-8 text-text border-shadow border flex flex-col place-content-center md:flex-row md:items-start md:gap-8 lg:mx-32 ">
       {/* Media Section */}
-      <div className="flex-shrink-0">
+      <div className="flex-shrink-0 flex place-content-center">
         {youtubeLink ? (
           <iframe
-            width="320"
+            width="300"
             height="180"
             src={youtubeLink}
             title="YouTube video player"

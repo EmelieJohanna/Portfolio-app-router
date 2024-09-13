@@ -10,7 +10,6 @@ export default function ThemeBtn() {
     dispatch({ type: "TOGGLE_THEME" });
   }
 
-  console.log("Themebtn: state", state);
   // return (
   //   <DarkModeSwitch
   //     className="text-accent"

@@ -97,7 +97,6 @@ export const ThemeProvider = ({ children }) => {
   const [state, dispatch] = useReducer(themeReducer, initialState);
 
   useEffect(() => {
-    console.log("Theme changed: ", state.userPreferences.theme);
     document.body.classList.remove("light", "dark", "pink");
     document.body.classList.add(state.userPreferences.theme);
   }, [state.userPreferences.theme]);
@@ -118,7 +117,6 @@ export const ThemeProvider = ({ children }) => {
 };
 
 export function useTheme() {
-  console.log("Using theme...");
   if (useContext(ThemeContext) === undefined) {
     throw new Error("useTheme must be used within a ThemeProvider");
   }
