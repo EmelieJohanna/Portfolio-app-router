@@ -15,7 +15,23 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
+        <title>My portfolio</title>
+
+        <meta
+          name="description"
+          content="Showcasing my projects and skills as a developer."
+        />
+
+        <meta property="og:title" content="My Portfolio" />
+        <meta
+          property="og:description"
+          content="Explore my latest projects, skills, and experiences in web development."
+        />
         <meta property="og:image" content={previewImageURL} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:url" content="https://emelie.org" />
+        <meta property="og:type" content="website" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
