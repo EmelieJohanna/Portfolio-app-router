@@ -7,6 +7,7 @@ function Hero() {
   return (
     <section className="bg-transparent text-text items-center py-10">
       <div className="grid md:grid-cols-2 ">
+        <img src="/1page-preview.png" className="hidden" />
         <div className="flex justify-center place-content-center items-center mb-10 md:mb-0">
           <Avatar className="slide-in" />
         </div>
