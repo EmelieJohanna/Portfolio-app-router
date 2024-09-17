@@ -6,6 +6,7 @@ import { useTheme } from "@/contexts/ThemeContext";
 import SkillDisplay from "./components/SkillDisplay";
 import Cube from "./components/Cube";
 import BackToTopButton from "./components/BackToTop";
+import AboutMe from "./components/AboutMe";
 
 export default function Home() {
   const { state } = useTheme();
@@ -24,6 +25,7 @@ export default function Home() {
         className={`flex min-h-screen flex-col items-center justify-between p-10`}
       >
         <Hero />
+        <AboutMe />
         <SkillDisplay classname="mb-20 md:m-28" />
         <ProjectsDisplay />
         <div className="m-20">

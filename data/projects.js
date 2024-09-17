@@ -22,7 +22,7 @@ export const projects = [
     title: "Number Guessing Game",
     mockup: "mockup-guessing-game.png",
     description:
-      "Guess the number between 1-100. My first app using React Native and Expo.",
+      "This is my first React Native app, a number-guessing game where players try to guess a randomly generated number between 1 and 100. With interactive feedback and an intuitive interface, the game provides instant responses to each guess, guiding players if they are too high, too low, or correct.",
     hrefGit: "https://github.com/EmelieJohanna/React-Native-GuessingGame.git",
   },
   {
@@ -30,7 +30,7 @@ export const projects = [
     title: "Apple Quiz",
     mockup: "mockup-quiz-redux.png",
     description:
-      "This is a quiz app made with my crew that lets you add/remove your own questions. Made with Next.js.",
+      "This app is a quiz platform built with Redux and Next.js, allowing users to test their knowledge with a series of questions. It features an admin login where you can easily add, edit, or remove quiz questions. The app also includes a scoring system and dark mode.",
     hrefVercel: "https://quiz-redux.emelie.org/",
     hrefGit: "https://github.com/EmelieJohanna/quiz-redux.git",
   },
@@ -46,7 +46,10 @@ export const projects = [
   {
     id: 6,
     title: "This Portfolio",
-    description: "Made with Next.js app router and tailwind.",
+    mockup: "mockup-portfolio.png",
+
+    description:
+      "Responsive portfolio, built with Next.js, React, and Tailwind CSS. It features dynamic theme switching with three different themes to choose from, enhancing the browsing experience. Check out the Projects section showcasing my work, and find contact information to get in touch.",
     hrefVercel: "https://emelie.org/",
     hrefGit: "https://github.com/EmelieJohanna/Portfolio-app-router.git",
   },

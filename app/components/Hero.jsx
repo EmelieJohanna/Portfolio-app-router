@@ -5,7 +5,7 @@ import { MdMailOutline } from "react-icons/md";
 
 function Hero() {
   return (
-    <section className="bg-transparent text-text items-center py-10">
+    <section className="bg-transparent text-text items-center py-10 lg:py-14">
       <div className="grid md:grid-cols-2 ">
         <div className="flex justify-center place-content-center items-center mb-10 md:mb-0">
           <Avatar className="slide-in" />

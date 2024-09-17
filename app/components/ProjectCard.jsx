@@ -9,9 +9,9 @@ function ProjectCard({
   youtubeLink,
 }) {
   return (
-    <div className=" rounded overflow-hidden shadow-md shadow-shadow p-8 text-text border-shadow border flex flex-col place-content-center md:flex-row md:items-start md:gap-8 lg:mx-32 ">
+    <div className="rounded overflow-hidden shadow-md shadow-shadow p-8 text-text border-shadow border flex flex-col place-content-center md:flex-row md:items-start md:gap-8 lg:mx-32">
       {/* Media Section */}
-      <div className="flex-shrink-0 flex place-content-center">
+      <div className="flex-shrink-0 flex justify-center">
         {youtubeLink ? (
           <iframe
             width="300"
@@ -40,17 +40,10 @@ function ProjectCard({
           <p className="mb-2">{description}</p>
         </div>
 
-        <div className="mt-4 flex space-x-4">
-          {hrefVercel && (
-            <Button href={hrefVercel} target="_blank" rel="noopener noreferrer">
-              View Project
-            </Button>
-          )}
-          {hrefGit && (
-            <Button href={hrefGit} target="_blank" rel="noopener noreferrer">
-              View on GitHub
-            </Button>
-          )}
+        {/* Buttons Section */}
+        <div className="mt-4 flex flex-row gap-4">
+          {hrefVercel && <Button href={hrefVercel}>View Project</Button>}
+          {hrefGit && <Button href={hrefGit}>View on GitHub</Button>}
         </div>
       </div>
     </div>

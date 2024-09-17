@@ -36,7 +36,7 @@ export default function Header() {
   };
 
   return (
-    <div className="sticky top-0 bg-background1 flex justify-between items-center p-4 text-text">
+    <div className="sticky top-0 bg-background3 flex justify-between items-center p-4 text-text">
       {/* Container for Logo and Hamburger Menu */}
       <div className="flex items-center space-x-4">
         {/* Logo */}
@@ -55,27 +55,24 @@ export default function Header() {
 
       {/* Desktop Navigation */}
       <nav className="hidden sm:flex p-2 space-x-4 items-center">
-        <Link
-          href="#"
-          onClick={() => scrollToSection(0)}
-          className="hover:text-accent"
-        >
-          Home
-        </Link>
-        <Link
-          href="#"
+        <button
           onClick={() => scrollToSection(500)}
-          className="hover:text-accent"
+          className="hover:text-accent font-bold"
+        >
+          About Me
+        </button>
+        <button
+          onClick={() => scrollToSection(1000)}
+          className="hover:text-accent font-bold"
         >
           Skills
-        </Link>
-        <Link
-          href=""
-          onClick={() => scrollToSection(1000)}
-          className="hover:text-accent"
+        </button>
+        <button
+          onClick={() => scrollToSection(1400)}
+          className="hover:text-accent font-bold"
         >
           Projects
-        </Link>
+        </button>
         {/* <Link href="#" className="hover:text-accent">
           About Me
         </Link> */}
@@ -87,27 +84,24 @@ export default function Header() {
                     fixed inset-y-0 left-0 w-64 transition-transform bg-white p-5
                     flex flex-col space-y-3 sm:hidden z-40`}
       >
-        <Link
-          href=""
+        <button
           className="hover:text-accent"
-          onClick={() => scrollToSection(0)}
+          onClick={() => scrollToSection(700)}
         >
-          Home
-        </Link>
-        <Link
-          href=""
-          className="hover:text-accent"
-          onClick={() => scrollToSection(600)}
-        >
-          Skills
-        </Link>
-        <Link
-          href=""
+          About Me
+        </button>
+        <button
           className="hover:text-accent"
           onClick={() => scrollToSection(1200)}
         >
+          Skills
+        </button>
+        <button
+          className="hover:text-accent"
+          onClick={() => scrollToSection(1850)}
+        >
           Projects
-        </Link>
+        </button>
 
         {/* <Link href="" className="hover:text-accent" onClick={toggleNav}>
           About Me
