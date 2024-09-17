@@ -102,7 +102,6 @@ export const ThemeProvider = ({ children }) => {
   }, [state.userPreferences.theme]);
 
   useEffect(() => {
-    console.log("Fetching saved theme...");
     const savedTheme = localStorage.getItem("theme");
     if (savedTheme) {
       dispatch({ type: "SET_THEME", payload: savedTheme });

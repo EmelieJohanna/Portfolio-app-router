@@ -2,7 +2,6 @@
 
 import Hero from "./components/Hero";
 import ProjectsDisplay from "./components/ProjectsDisplay";
-import Head from "next/head";
 import { useTheme } from "@/contexts/ThemeContext";
 import SkillDisplay from "./components/SkillDisplay";
 import Cube from "./components/Cube";
@@ -21,14 +20,6 @@ export default function Home() {
          : ""
      }`}
     >
-      <Head>
-        <title>My Coding Portfolio</title>
-        <meta
-          name="description"
-          content="My coding portfolio build with Next.js, React, and Tailwind CSS"
-        />
-      </Head>
-
       <main
         className={`flex min-h-screen flex-col items-center justify-between p-10`}
       >
