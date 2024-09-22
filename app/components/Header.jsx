@@ -54,22 +54,22 @@ export default function Header() {
       </div>
 
       {/* Desktop Navigation */}
-      <nav className="hidden sm:flex p-2 space-x-4 items-center">
+      <nav className="hidden sm:flex p-2 space-x-4 items-center font-bold">
         <button
           onClick={() => scrollToSection(500)}
-          className="hover:text-accent font-bold"
+          className="hover:text-accent hover:underline"
         >
           About Me
         </button>
         <button
           onClick={() => scrollToSection(1000)}
-          className="hover:text-accent font-bold"
+          className="hover:text-accent hover:underline "
         >
           Skills
         </button>
         <button
           onClick={() => scrollToSection(1400)}
-          className="hover:text-accent font-bold"
+          className="hover:text-accent hover:underline"
         >
           Projects
         </button>

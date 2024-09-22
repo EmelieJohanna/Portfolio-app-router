@@ -19,7 +19,7 @@ function Hero() {
             </h1>
             <div className="flex space-x-4 mb-10">
               <Button
-                href="mailto:emelie.lundberg42@gmail.com"
+                href="https://www.linkedin.com/in/emelie-lundberg-jo/"
                 onClick={() => console.log("connect")}
               >
                 <FaLinkedin /> LinkedIn

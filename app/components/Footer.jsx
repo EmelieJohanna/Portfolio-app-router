@@ -17,7 +17,7 @@ export default function Footer() {
       </div>
       <div className="flex m-4 justify-center space-x-4">
         <Button
-          href="mailto:emelie.lundberg42@gmail.com"
+          href="https://www.linkedin.com/in/emelie-lundberg-jo/"
           onClick={() => console.log("connect")}
         >
           <FaLinkedin /> LinkedIn
@@ -44,7 +44,7 @@ export default function Footer() {
       >
         <FaGithub />
       </Link> */}
-      <div className="flex justify-center">
+      <div className="flex justify-center text-accent">
         &copy; {new Date().getFullYear()} Emelie Johanna Group. All rights
         reserved.
       </div>
