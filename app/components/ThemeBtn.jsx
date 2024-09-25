@@ -20,7 +20,7 @@ export default function ThemeBtn() {
 
   return (
     <button
-      className="flex items-center justify-between w-12 h-6 p-1 bg-gray-200 dark:bg-accent rounded-full cursor-pointer"
+      className="flex items-center border border-slate-700 border-opacity-10 justify-between w-12 h-6 p-1 bg-gray-200 dark:bg-accent rounded-full cursor-pointer"
       onClick={toggleTheme}
       checked={state.userPreferences.theme === "dark"}
       aria-label="Activate Dark Theme"

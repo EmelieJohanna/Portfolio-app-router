@@ -2,7 +2,13 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaUser,
+  FaCode,
+  FaProjectDiagram,
+} from "react-icons/fa";
 import { CiMenuBurger } from "react-icons/ci";
 import { RxCross1 } from "react-icons/rx";
 import ThemeBtn from "./ThemeBtn";
@@ -36,22 +42,23 @@ export default function Header() {
   };
 
   return (
-    <div className="sticky top-0 bg-background3 flex justify-between items-center p-4 text-text">
+    <div className="sticky top-0 bg-background3 flex justify-between items-center p-4 text-text z-50">
       {/* Container for Logo and Hamburger Menu */}
-      <div className="flex items-center space-x-4">
-        {/* Logo */}
-        <Logo />
-        {/* Hamburger Menu (for mobile) */}
-        <div className="sm:hidden flex items-center">
-          <button onClick={toggleNav} className="font-extrabold">
-            {isNavOpen ? (
-              <RxCross1 size="28px" className="text-text" />
-            ) : (
-              <CiMenuBurger size="28px" className="text-text" />
-            )}
-          </button>
-        </div>
+      {/* <div className="flex items-center space-x-4"> */}
+      {/* Logo */}
+      <Logo />
+      {/* Hamburger Menu (for mobile) */}
+      <div className="sm:hidden flex items-center">
+        {/* LOOOOKS GOOOD!!!!!!!!!!!!111111111 */}
+        <button onClick={toggleNav} className="font-extrabold">
+          {isNavOpen ? (
+            <RxCross1 size="2rem" className="text-text" />
+          ) : (
+            <CiMenuBurger size="2rem" className="text-text" />
+          )}
+        </button>
       </div>
+      {/* </div> */}
 
       {/* Desktop Navigation */}
       <nav className="hidden sm:flex p-2 space-x-4 items-center font-bold">
@@ -73,49 +80,55 @@ export default function Header() {
         >
           Projects
         </button>
-        {/* <Link href="#" className="hover:text-accent">
-          About Me
-        </Link> */}
+
+        {/* Right Side Buttons */}
+        <div className="flex items-center space-x-2">
+          <Link href="https://github.com/EmelieJohanna">
+            <FaGithub />
+          </Link>
+          <Link href="https://www.linkedin.com/in/emelie-lundberg-jo/">
+            <FaLinkedin />
+          </Link>
+          <ThemeBtn />
+        </div>
       </nav>
 
       {/* Mobile Navigation Menu */}
       <div
-        className={`${isNavOpen ? "translate-x-0" : "-translate-x-full"}
-                    fixed inset-y-0 left-0 w-64 transition-transform bg-white p-5
-                    flex flex-col space-y-3 sm:hidden z-40`}
+        className={`${isNavOpen ? "translate-x-0" : "translate-x-full"}
+                    fixed bg-background3 right-0 top-20 w-full h-full transition-transform  p-6 pt-20
+                    flex flex-col space-y-14 sm:hidden z-40 ease-in-out duration-500 text-3xl`}
       >
         <button
-          className="hover:text-accent"
+          className="flex gap-2 items-center font-semibold hover:text-accent hover:underline"
           onClick={() => scrollToSection(700)}
         >
+          <FaUser />
           About Me
         </button>
         <button
-          className="hover:text-accent"
+          className="flex gap-2 items-center font-semibold hover:text-accent hover:underline"
           onClick={() => scrollToSection(1200)}
         >
+          <FaCode />
           Skills
         </button>
         <button
-          className="hover:text-accent"
+          className="flex gap-2  items-center font-semibold hover:text-accent hover:underline"
           onClick={() => scrollToSection(1850)}
         >
+          <FaProjectDiagram />
           Projects
-        </button>
-
-        {/* <Link href="" className="hover:text-accent" onClick={toggleNav}>
-          About Me
-        </Link> */}
-      </div>
-
-      {/* Right Side Buttons */}
-      <div className="flex items-center space-x-2">
-        <Link href="https://github.com/EmelieJohanna">
-          <FaGithub />
-        </Link>
-        <Link href="https://www.linkedin.com/in/emelie-lundberg-jo/">
-          <FaLinkedin />
-        </Link>
+        </button>{" "}
+        {/* Social Icons and Theme Button */}
+        <div className="flex items-center space-x-4 mt-10">
+          <Link href="https://github.com/EmelieJohanna">
+            <FaGithub size="2rem" />
+          </Link>
+          <Link href="https://www.linkedin.com/in/emelie-lundberg-jo/">
+            <FaLinkedin size="2rem" />
+          </Link>
+        </div>{" "}
         <ThemeBtn />
       </div>
     </div>

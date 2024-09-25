@@ -9,13 +9,13 @@ function ProjectCard({
   youtubeLink,
 }) {
   return (
-    <div className="rounded overflow-hidden shadow-md shadow-shadow p-8 text-text border-shadow border flex flex-col place-content-center md:flex-row md:items-start md:gap-8 lg:mx-32">
+    <div className="rounded overflow-hidden shadow-md shadow-shadow p-12 text-text border-shadow border flex flex-col place-content-center md:flex-row md:items-center md:gap-8 max-w-4xl">
       {/* Media Section */}
-      <div className="flex-shrink-0 flex justify-center">
+      <div className="flex-shrink-0 flex justify-center md:w-80">
         {youtubeLink ? (
           <iframe
-            width="300"
-            height="180"
+            width="140"
+            height="250"
             src={youtubeLink}
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
