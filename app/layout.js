@@ -3,7 +3,7 @@ import "./logo.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Providers from "./components/Providers";
-import ClientAnalytics from "./components/ClientAnalytics";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Inter } from "next/font/google";
 
@@ -42,7 +42,7 @@ export default function RootLayout({ children }) {
           {children}
           <Footer />
         </Providers>
-        <ClientAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
+        <GoogleAnalytics gaId="G-G9CYSPR6NY" />
         <SpeedInsights />
       </body>
     </html>
