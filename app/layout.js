@@ -1,8 +1,15 @@
+import "./globals.css";
+import "./logo.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import MyApp from "./_app";
-import Head from "next/head";
+import Providers from "./components/Providers";
+import ClientAnalytics from "./components/ClientAnalytics";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Inter } from "next/font/google";
+
+const inter = Inter({
+  subsets: ["latin"],
+});
 
 export const metadata = {
   title: "Portfolio - Emelie",
@@ -28,23 +35,26 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <Head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap"
-          rel="stylesheet"
-        />
-      </Head>
-      <body>
-        <MyApp>
+    <html lang="en" className={`${inter.className}`}>
+      <body className="min-h-screen bg-gradient-to-t from-background1 via-background2 to-background3 text-text">
+        <Providers>
           <Header />
           {children}
           <Footer />
-        </MyApp>
+        </Providers>
+        <ClientAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
         <SpeedInsights />
       </body>
     </html>
   );
+}
+
+// Font used for "old" Logo, might make a comeback?
+{
+  /* <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap"
+  rel="stylesheet"
+/> */
 }
