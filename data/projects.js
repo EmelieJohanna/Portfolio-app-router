@@ -10,23 +10,6 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Todo List Redux",
-    mockup: "mockup-todolist.png",
-    description:
-      "A project that lets you add/remove and check of finnished tasks. Made with Next.js pages router and redux toolkit.",
-    hrefVercel: "https://todolist-redux.emelie.org/",
-    hrefGit: "https://github.com/EmelieJohanna/todolist-redux.git",
-  },
-  {
-    id: 3,
-    title: "Number Guessing Game",
-    mockup: "mockup-guessing-game.png",
-    description:
-      "This is my first React Native app, a number-guessing game where players try to guess a randomly generated number between 1 and 100. With interactive feedback and an intuitive interface, the game provides instant responses to each guess, guiding players if they are too high, too low, or correct.",
-    hrefGit: "https://github.com/EmelieJohanna/React-Native-GuessingGame.git",
-  },
-  {
-    id: 4,
     title: "Apple Quiz",
     mockup: "mockup-quiz-redux.png",
     description:
@@ -35,7 +18,32 @@ export const projects = [
     hrefGit: "https://github.com/EmelieJohanna/quiz-redux.git",
   },
   {
+    id: 3,
+    title: "NEXTA bank",
+    mockup: "mockup-nexta-bank.png",
+    description:
+      "NEXTA is a secure banking app where users can sign up, log in, view balances, and make transactions. Built with Next.js, Express.js, MySQL, and styled with Tailwind CSS, it offers fast, responsive, and reliable performance for seamless financial management.",
+    hrefGit: "https://github.com/EmelieJohanna/Bank-Site-MySQL-Docker.git",
+  },
+  {
+    id: 4,
+    title: "Number Guessing Game",
+    mockup: "mockup-guessing-game.png",
+    description:
+      "This is my first React Native app, a number-guessing game where players try to guess a randomly generated number between 1 and 100. With interactive feedback and an intuitive interface, the game provides instant responses to each guess, guiding players if they are too high, too low, or correct.",
+    hrefGit: "https://github.com/EmelieJohanna/React-Native-GuessingGame.git",
+  },
+  {
     id: 5,
+    title: "This Portfolio",
+    mockup: "mockup-portfolio.png",
+    description:
+      "Responsive portfolio, built with Next.js, React, and Tailwind CSS. It features dynamic theme switching with three different themes to choose from, enhancing the browsing experience. Check out the Projects section showcasing my work, and find contact information to get in touch.",
+    hrefVercel: "https://emelie.org/",
+    hrefGit: "https://github.com/EmelieJohanna/Portfolio-app-router.git",
+  },
+  {
+    id: 6,
     title: "The Little Cook Book",
     mockup: "mockup-recipe-app.png",
     description:
@@ -44,13 +52,12 @@ export const projects = [
     hrefGit: "https://github.com/EmelieJohanna/Recipe-app.git",
   },
   {
-    id: 6,
-    title: "This Portfolio",
-    mockup: "mockup-portfolio.png",
-
+    id: 7,
+    title: "Todo List Redux",
+    mockup: "mockup-todolist.png",
     description:
-      "Responsive portfolio, built with Next.js, React, and Tailwind CSS. It features dynamic theme switching with three different themes to choose from, enhancing the browsing experience. Check out the Projects section showcasing my work, and find contact information to get in touch.",
-    hrefVercel: "https://emelie.org/",
-    hrefGit: "https://github.com/EmelieJohanna/Portfolio-app-router.git",
+      "A project that lets you add/remove and check of finnished tasks. Made with Next.js pages router and redux toolkit.",
+    hrefVercel: "https://todolist-redux.emelie.org/",
+    hrefGit: "https://github.com/EmelieJohanna/todolist-redux.git",
   },
 ];
