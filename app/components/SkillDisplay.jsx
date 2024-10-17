@@ -40,7 +40,7 @@ export default function SkillDisplay({ classname }) {
       icon: <FaNodeJs className="text-accent" />,
     },
     {
-      name: "Type Script (In progress)",
+      name: "TypeScript (In progress)",
       icon: <SiTypescript className="text-accent" />,
     },
   ];
