@@ -1,14 +1,20 @@
 "use client";
-import { FaHtml5, FaCss3Alt, FaReact, FaFigma } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaReact, FaFigma, FaNodeJs } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiTailwindcss, SiExpress, SiVite, SiRedux } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiExpress,
+  SiVite,
+  SiRedux,
+  SiTypescript,
+} from "react-icons/si";
 import { TbBrandNextjs, TbBrandReactNative } from "react-icons/tb";
 
 function SkillItem({ skillName, iconSrc }) {
   return (
     <div className="flex flex-col mt-4 text-3xl mx-4 place-content-center items-center transition-transform duration-200 hover:scale-110 border border-shadow w-24 h-28 rounded-lg  shadow-shadow hover:shadow-xl text-text">
       {iconSrc}
-      <span className="mt-4 text-sm">{skillName}</span>
+      <span className="mt-4 text-sm text-center">{skillName}</span>
     </div>
   );
 }
@@ -28,6 +34,14 @@ export default function SkillDisplay({ classname }) {
     {
       name: "React Native",
       icon: <TbBrandReactNative className="text-accent" />,
+    },
+    {
+      name: "Node",
+      icon: <FaNodeJs className="text-accent" />,
+    },
+    {
+      name: "Type Script (In progress)",
+      icon: <SiTypescript className="text-accent" />,
     },
   ];
 
