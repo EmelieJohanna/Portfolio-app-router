@@ -26,7 +26,7 @@ export default function SkillDisplay({ classname }) {
     { name: "JavaScript", icon: <IoLogoJavascript className="text-accent" /> },
     { name: "Tailwind", icon: <SiTailwindcss className="text-accent" /> },
     { name: "React", icon: <FaReact className="text-accent" /> },
-    { name: "Nextjs", icon: <TbBrandNextjs className="text-accent" /> },
+    { name: "Next.js", icon: <TbBrandNextjs className="text-accent" /> },
     { name: "Figma", icon: <FaFigma className="text-accent" /> },
     { name: "Express", icon: <SiExpress className="text-accent" /> },
     { name: "Vite", icon: <SiVite className="text-accent" /> },
@@ -36,7 +36,7 @@ export default function SkillDisplay({ classname }) {
       icon: <TbBrandReactNative className="text-accent" />,
     },
     {
-      name: "Node",
+      name: "Node.js",
       icon: <FaNodeJs className="text-accent" />,
     },
     {

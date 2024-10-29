@@ -26,6 +26,15 @@ export const projects = [
     hrefGit: "https://github.com/EmelieJohanna/Bank-Site-MySQL-Docker.git",
   },
   {
+    id: 7,
+    title: "Movie Lab",
+    mockup: "mockup-movie-lab.png",
+    description:
+      "Movie Lab is a user-friendly website where you can easily search for movies, view detailed information, and save your favorite films. Built with modern tools like React and Vite, it offers a smooth and responsive experience on any device, making movie discovery enjoyable and hassle-free.",
+    hrefVercel: "https://movie-lab-ruddy.vercel.app",
+    hrefGit: "https://github.com/EmelieJohanna/movie-lab.git",
+  },
+  {
     id: 4,
     title: "Number Guessing Game",
     mockup: "mockup-guessing-game.png",
@@ -41,23 +50,5 @@ export const projects = [
       "Responsive portfolio, built with Next.js, React, and Tailwind CSS. It features dynamic theme switching with three different themes to choose from, enhancing the browsing experience. Check out the Projects section showcasing my work, and find contact information to get in touch.",
     hrefVercel: "https://emelie.org/",
     hrefGit: "https://github.com/EmelieJohanna/Portfolio-app-router.git",
-  },
-  {
-    id: 6,
-    title: "The Little Cook Book",
-    mockup: "mockup-recipe-app.png",
-    description:
-      "A quick group project built with React as part of a school assignment. The goal was to create a recipe app that integrates data from the Edamam API. The app allows users to search for recipes, rate them, as well as add and delete recipes. Since it was a short project, it's not flawless, but it demonstrates core functionality and API integration.",
-    hrefVercel: "https://recipe-app-lemon-gamma.vercel.app/",
-    hrefGit: "https://github.com/EmelieJohanna/Recipe-app.git",
-  },
-  {
-    id: 7,
-    title: "Todo List Redux",
-    mockup: "mockup-todolist.png",
-    description:
-      "A project that lets you add/remove and check of finnished tasks. Made with Next.js pages router and redux toolkit.",
-    hrefVercel: "https://todolist-redux.emelie.org/",
-    hrefGit: "https://github.com/EmelieJohanna/todolist-redux.git",
   },
 ];
